@@ -147,7 +147,7 @@ class EFGroups extends Migration {
 
   function csvcolumns() {
     $columns[0] = array('id', 'Id');
-    $columns[1] = array('name', 'name');
+    $columns[1] = array('name', 'Navn');
     return $columns;
   }
 
