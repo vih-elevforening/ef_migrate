@@ -24,6 +24,7 @@ class CommonsMigrateGroupFieldHandler extends MigrateEntityReferenceFieldHandler
     }
 
     foreach ($values as $value) {
+      print "Searching for " . $value . "\n";
       $query = new EntityFieldQuery();
       $entities = $query->entityCondition('entity_type', 'node')
         ->propertyCondition('type', 'group')
@@ -35,19 +36,24 @@ class CommonsMigrateGroupFieldHandler extends MigrateEntityReferenceFieldHandler
       if (!empty($entities['node'])) {
         $existing_node = node_load(array_shift(array_keys($entities['node'])));
         print "Existing node " . $existing_node->nid . "\n";
+        $nids[] = $existing_node->nid;
       }
         if (!isset($existing_node) && !empty($arguments['create_node'])) {
           $new_node = new stdClass();
           $new_node->title = $value;
           $new_node->type = 'group';
+          node_object_prepare($new_node);
           $new_node->field_and_subscribe_settings = 'approval';
           $new_node->status = 1;
           $new_node->language = LANGUAGE_NONE;
-          node_object_prepare($new_node);
+          $new_node->uid = 1;
           node_save($new_node);
           print "New node " . $new_node->nid . "\n";
+          $nids[] = $new_node->nid;
         }
       }
+
+    return $nids;
     }
 
 }

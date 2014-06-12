@@ -1,18 +1,18 @@
 Uid,"Username","Adresse - Fornavn","Adresse - Efternavn","Adresse - Fulde navn","Adresse - Land","Adresse - Locality (i.e. City)","Adresse - Postnummer","Adresse - Premise (i.e. Apartment / Suite number)","Adresse - Thoroughfare (i.e. Street address)","Billede","E-mail","Medlemsnummer","Årgang","Telefon"
-"16","1",,,"Karen Maren","Danmark","City","3070",,"Road Street 77",,"1@example.com",,"2",23456789
-"17","2",,,"Birthe Hansdóttir","Færøerne (Føroyar)"," Tórshavn","100",," Bislafalág 40",,"1@example.com","12463","1"
-"1","3","Mia Olesen",,,,"Østre Alle 28",,"7100 Vejle",,,"1@example.com",,
-"2","4",,,,"Danmark",,,,,,"1@example.com",,
+"16","1",,,"Karen Maren","Danmark","City","3070",,"Road Street 77",,"1@example.com",,"10/11",23456789
+"17","2",,,"Birthe Hansdóttir","Færøerne (Føroyar)"," Tórshavn","100",," Bislafalág 40",,"2@example.com","12463","10/11",
+"1","3","Mia Olesen",,,,"Østre Alle 28",,"7100 Vejle",,,"3@example.com",,
+"2","4",,,,"Danmark",,,,,,"4@example.com",,
 "3","5","Mette Grive",,,,"Frederiksværksroad 1 st.v ",,"3400 Hillerød",,,"",,
-"4","6","Karlis Gamman",,,,"Bundagassen 3-31",,"3200 Talsi",,,"1@example.com",,
-"5","7","Kaisa Kaihøj",,,,"Solbråtanvej 41a",,"1410 Kølbøtte",,,"1@example.com",,TEST GROUP
-"6","8","Jonathan Hjørne",,,,"Himmelbjergroad 22",,"8600 Silkeborg",,,"1@example.com",,
-"7","9","Jonas",,"Jonas Svendsen","Danmark","Vejle","7100",,"Vesterstreet 1 2th",,"1@example.com",,"4"
+"4","6","Karlis Gamman",,,,"Bundagassen 3-31",,"3200 Talsi",,,"5@example.com",,
+"5","7","Kaisa Kaihøj",,,,"Solbråtanvej 41a",,"1410 Kølbøtte",,,"6@example.com",,"TEST GROUP"
+"6","8","Jonathan Hjørne",,,,"Himmelbjergroad 22",,"8600 Silkeborg",,,"7@example.com",,
+"7","9","Jonas",,"Jonas Svendsen","Danmark","Vejle","7100",,"Vesterstreet 1 2th",,"8@example.com",,"55/56"
 "8","10","Jens Svendsen",,,,"Lundingstreet 7, 2. tv.",,"2100 København Ø",,,"",,
-"9","11",,,,"Danmark",,,,,"","2@example.dk",,6
-"10",12,"Gert Olsen",,,,"Hillederød Street 111",,"3400 Hillerød",,,"1@example.com",,
-"11",13,,,"Jakob Bønding Winge-Aasborg","Danmark","vejle","7100",,"Vejle Street 7",,"1@example.com",,"3"
-"12",14,,,,"Danmark",,,,,,"1@example.com",,"",
-"13",15,,,"Jeppe Abelsen","Danmark",,,,,,"1@example.com",,6
-"14",16,,,"Peter Petersen","Grønland","Ilulissat","3952","My other road",,"","1@example.com",,"1"
-"15",17,,,"Solveig Petersen","Danmark","Hvidovre","2650",,"My road 47 b",,"",,"1"
+"9","11",,,,"Danmark",,,,,"","13@example.dk",,"55/56"
+"10",12,"Gert Olsen",,,,"Hillederød Street 111",,"3400 Hillerød",,,"9@example.com",,
+"11",13,,,"Jakob Bønding Winge-Aasborg","Danmark","vejle","7100",,"Vejle Street 7",,"10@example.com",,"44/45"
+"12",14,,,,"Danmark",,,,,,"11@example.com",,"",
+"13",15,,,"Jeppe Abelsen","Danmark",,,,,,"1@example.com",,"12/13"
+"14",16,,,"Peter Petersen","Grønland","Ilulissat","3952","My other road",,"","12@example.com",,"14/15"
+"15",17,,,"Solveig Petersen","Danmark","Hvidovre","2650",,"My road 47 b",,"",,"10/11"
