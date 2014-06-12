@@ -45,6 +45,7 @@ class EFUsers extends Migration {
       ->description(t("Is user active?"));
 
     $this->addFieldMapping('og_user_node', 'year')
+      ->defaultValue(array())
       ->sourceMigration('EFGroups');
 
     $this->addFieldMapping('timezone')
@@ -77,9 +78,6 @@ class EFUsers extends Migration {
       $name = $this->splitName($row->full_name);
       $row->surname = $name['surname'];
     }
-    if (!is_int($row->id)) {
-      // We should choose something specific here - or convert the id with a specific algorithm
-    }
 
     $row->country = 'DK';
 
@@ -95,7 +93,7 @@ class EFUsers extends Migration {
     $columns[5] = array('country', 'Adresse - Land');
     $columns[6] = array('city', 'Adresse - Locality (i.e. City)');
     $columns[7] = array('zipcode', 'Adresse - Postnummer');
-    $columns[8] = array('full_zip', 'Adresse - Premise (i.e. Apartment / Suite number)');
+    $columns[8] = array('apartment_no', 'Adresse - Premise (i.e. Apartment / Suite number)');
     $columns[9] = array('address', 'Adresse - Thoroughfare (i.e. Street Address');
     $columns[10] = array('picture', 'Billede');
     $columns[11] = array('email', 'E-mail');
@@ -138,7 +136,7 @@ class EFGroups extends Migration {
     $this->destination = new MigrateDestinationNode('group');
 
     $this->addFieldMapping('title', 'name');
-    $this->addFieldMapping('field_and_subscribe_settings')
+    $this->addFieldMapping('field_og_subscribe_settings')
       ->defaultValue('approval');
 
     $this->addFieldMapping('uid', 'uid')->defaultValue(1);
