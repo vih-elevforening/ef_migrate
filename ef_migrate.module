@@ -1,0 +1,17 @@
+<?php
+/**
+ * @file
+ * Code for the Elevforeningen User Migrate feature.
+ */
+
+function ef_migrate_migrate_api() {
+  $api = array(
+    'api' => 2,
+    'migrations' => array(
+      'EFUsers' => array('class_name' => 'EFUsers'),
+      'EFGroups' => array('class_name' => 'EFGroups'),
+    ),
+  );
+
+  return $api;
+}

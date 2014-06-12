@@ -1,0 +1,9 @@
+name = EF Migrate
+description = Migrate for EF
+core = 7.x
+package = EF
+version = 7.x-0.1
+project = ef_migrate
+dependencies[] = migrate
+
+files[] = ef_migrate.migrate.inc
