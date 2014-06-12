@@ -11,6 +11,9 @@ function ef_migrate_migrate_api() {
       'EFUsers' => array('class_name' => 'EFUsers'),
       'EFGroups' => array('class_name' => 'EFGroups'),
     ),
+    'field handlers' => array(
+      'CommonsMigrateGroupFieldHandler',
+    ),
   );
 
   return $api;

@@ -7,3 +7,4 @@ project = ef_migrate
 dependencies[] = migrate
 
 files[] = ef_migrate.migrate.inc
+files[] = plugins/destinations/fields.inc

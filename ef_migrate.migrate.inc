@@ -43,9 +43,13 @@ class EFUsers extends Migration {
     $this->addFieldMapping('status')
       ->defaultValue(true)
       ->description(t("Is user active?"));
-
+    /*
     $this->addFieldMapping('og_user_node', 'year')
       ->sourceMigration('EFGroups');
+    */
+    $this->addFieldMapping('og_user_node', 'year');
+    $this->addFieldMapping('og_user_node:create_node')
+      ->defaultValue('');
 
     $this->addFieldMapping('timezone')
       ->defaultValue('Europe/Copenhagen');
